@@ -8,5 +8,5 @@
 from azure.cli.core.commands import cli_command
 
 
-cli_command(__name__, 'hana command1', 'azure.cli.command_modules.hana.custom#hana_custom')
-cli_command(__name__, 'hana command2', 'azure.cli.command_modules.hana.custom#hana_custom_two')
+cli_command(__name__, 'hana list', 'azure.cli.command_modules.hana.custom#hana_list')
+cli_command(__name__, 'hana show', 'azure.cli.command_modules.hana.custom#hana_show')

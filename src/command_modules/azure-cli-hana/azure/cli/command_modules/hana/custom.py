@@ -9,10 +9,10 @@ import azure.cli.core.azlogging as azlogging
 logger = azlogging.get_az_logger(__name__)
 
 
-def hana_custom(example_param=None):
-    result = {'example_param': example_param}
+def hana_list(resource_group=None):
+    result = {'resource_group': resource_group}
     return result
 
 
-def hana_custom_two():
-    return ['hello', 'world']
+def hana_show(resource_group, instance_name):
+    return {'resource_group': resource_group, 'hana_instance_name': instance_name}
